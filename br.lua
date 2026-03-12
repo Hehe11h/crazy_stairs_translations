@@ -1,5 +1,5 @@
 --VERSION 4.2--
---BRITISH ENGLISH--
+--BRAZILIAN PORTUGUESE--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
@@ -18,50 +18,50 @@ module.gui.basic = {
 
 module.gui.switcher = {
 
-	["join"] = "JOIN",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
+	["join"] = "JUNTAR-SE",
+	["friends"] = "AMIGOS JOGANDO",
+	["refresh"] = "recarregando...",
+	["fail"] = "FALHA AO RECARREGAR!",
 
 	--NEW
-	["refreshbutton"] = "REFRESH",
-	["failed"] = "Teleport failed!",
-	["classic"] = "Classic Tower",
-	["pro"] = "Pro Tower",
-	["custom"] = "Custom Tower",
-	["noVR"] = "VR Free Tower",
+	["refreshbutton"] = "RECARREGAR",
+	["failed"] = "O Teleporte falhou!",
+	["classic"] = "Torre Clássica",
+	["pro"] = "Torre Profissional",
+	["custom"] = "Torre Customizada",
+	["noVR"] = "Torre sem VR",
 	--END NEW
 
 }
 
 module.gui.serversettings = {
 
-	["Drones"] = "DRONE SETTINGS",
-	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
-	["DroneEnabled"] = "Drones enabled",
-	["DroneFix"] = "Drones restore stairs",
-	["DroneRemove"] = "Drones remove cursed intersections",
-	["DroneUnCurse"] = "Drones restore cursed stairs",
-	["DroneMove"] = "Drones move stairs in default mode",
-	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Drone travel speed (level/second)",
-	["DroneDelay"] = "Drone spin duration (seconds)",
-	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
-	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
-	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
+	["Drones"] = "CONFIGURAÇÕES DOS DRONES",
+	["DronesReadOnly"] = "CONFIGURAÇÕES DOS DRONES (apenas leitura)",
+	["DroneEnabled"] = "Drones ativados",
+	["DroneFix"] = "Drones restauram escadas",
+	["DroneRemove"] = "Drones removem intersecções amaldiçoadas",
+	["DroneUnCurse"] = "Drones restauram escadas amaldiçoadas",
+	["DroneMove"] = "Drones movem escadas no modo padrão",
+	["DroneSpin"] = "Drones giram escadas no modo padrão",
+	["DroneSpeed"] = "Velocidade do Drone (nível/segundo)",
+	["DroneDelay"] = "Duração do giro do Drone (segundos)",
+	["DroneMax"] = "Quantidade máxima de escadas (drones vão exclusivamente destruir acima desse limite)",
+	["DroneMin"] = "Quantidade mínima de escadas (drones vão exclusivamente construir acima desse limite)",
+	["DroneBlock"] = "Chance de amaldiçoar intersecção para cada encontro de intersecções vazias (porcentagem)",
+	["DroneCurse"] = "Chance de amaldiçoar escadas para cada criação ou escada normal(porcentagem)",
 
-	["Tower"] = "TOWER SETTINGS",
-	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
-	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
-	["CasualPlayers"] = "Casual players allowed to cast spells",
-	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
-	["EvenLevels"] = "Even Levels Restricted",
-	["OrbMoves"] = "Endgame orb changes position",
-	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
+	["Tower"] = "CONFIGURAÇÕES DA TORRE",
+	["TowerReadOnly"] = "CONFIGURAÇÕES DA TORRE (apenas leitura)",
+	["InfMode"] = "Modo Infinito (não pode ser alterado durante uma corrida ou uma regeneração)",
+	["CasualPlayers"] = "Permitir o uso de feitiços para jogadores casuais",
+	["Regeneration"] = "Geração Automática de Escadas após o Purge de um Wicked (não funcionará no modo infinito)",
+	["EvenLevels"] = "Níveis Pares Restringidos",
+	["OrbMoves"] = "O Orbe muda de posição",
+	["InfRegeneration"] = "Geração Automática de , tower levels change and after the infinite race",
 	--deprecated
 	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["TowerSize"] = "Tower grid size (experimental)",
+	["TowerSize"] = "Proporções da Torre (experimental)",
 	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
 	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
 	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
@@ -291,219 +291,219 @@ local CommonSpellNames = {
 module.spells.names = {
 
 	--PATRON
-	["summon"] = "Create Stairs",
-	["restore"] = "Call the Orb", 
-	["split"] = "Rebuild Opposite",
-	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = "Create Link",
-	["portal"] = "Create Portal",
+	["summon"] = "Criar Escadas",
+	["restore"] = "Chamar o Orbe", 
+	["split"] = "Reconstruir o Oposto",
+	["shrinkabove"] = "Encolher Escadas Acima",
+	["link"] = "Criar Ponte",
+	["portal"] = "Criar Portal",
 
-	["summoner"] = "Summoner",
-	["patronevent"] = "Stairs Overload",
-	["patronaltevent"] = "Shrinkage",
+	["summoner"] = "Invocador",
+	["patronevent"] = "Sobrecarga de Escadas",
+	["patronaltevent"] = "Encolhimento",
 
 	--JOKER 
-	["flip"] = "Flip Stairs",
-	["flipabove"] = "Flip Above Stairs",
-	["fake"] = "Create Fake Stairs",
-	["invisible"] = "Create Invisible Stairs",
-	["disco"] = "Disco Stairs",
-	["trap"] = "Create Trap",
+	["flip"] = "Virar Escadas",
+	["flipabove"] = "Virar Escadas Acima",
+	["fake"] = "Criar Escadas Falsas",
+	["invisible"] = "Criar Escadas Invisíveis",
+	["disco"] = "Escada da Dança", --"Dance Stairs"
+	["trap"] = "Criar Armadilha",
 
-	["flipper"] = "Flipper",
-	["jokerevent"] = "The Cloak",
-	["jokeraltevent"] = "Flip Them All",
+	["flipper"] = "Vira-Vira", --"Flip-Flip"
+	["jokerevent"] = "Agora você vê...", --"Now you see..."
+	["jokeraltevent"] = "Virando por todo lado", --"Flipping everywhere"
 
 	--WICKED
-	["destroy"] = "Destroy Stairs",
-	["destroyabove"] = "Destroy Above Stairs",
-	["bend"] = "Bend Stairs Up",
-	["damage"] = "Damage Above Stairs",
-	["flatten"] = "Bend Opposite Stairs Down",
-	["wall"] = "Create Wall" ,
+	["destroy"] = "Destruir Escadas",
+	["destroyabove"] = "Destruir Escadas Acima",
+	["bend"] = "Dobrar Escadas Para Cima",
+	["damage"] = "Danificar Escadas Acima",
+	["flatten"] = "Dobrar Escadas Opostas para Baixo",
+	["wall"] = "Criar Parede" ,
 
-	["bender"] = "Bender",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["bender"] = "Dobrador",
+	["wickedevent"] = "Destruição",
+	["wickedaltevent"] = "Expurgação",
 
 	--KEEPER
-	["move"] = "Move Stairs",
-	["rotate"] = "Rotate Stairs",
-	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
-	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["move"] = "Mover Escadas",
+	["rotate"] = "Girar Escadas",
+	["moveup"] = "Subir Escadas",
+	["movedown"] = "Restaurar Escadas",
+	["moverandom"] = "Mover Escadas Acima Aleatoriamente",
+	["rig"] = "Mover Escada Aleatoriamente",
 
-	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["ascension"] = "Ascensão",
+	["keeperevent"] = "Embaralhar", --"shuffle"
+	["keeperaltevent"] = "Restauração",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
-	["ghost"] = "Ghostify Above Stairs",
-	["shadow"] = "Ghostify Stairs",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["phantom"] = "Criar Escadas Espectrais", -- I didn't find any that matches with "Ghostify" so I changed to "Spectrify"
+	["ghost"] = "Espectrar Escadas Acima",
+	["shadow"] = "Espectrar Escadas",
+	["horizontal"] = "Teleporte Horizontal",
+	["random"] = "Teleporte Aleatório",
+	["vertical"] = "Teleporte Vertical",
 
-	["traveller"] = "Shimmering",
-	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["traveller"] = "Cintilante",
+	["spectreevent"] = "Embaralhamento Fantasma",
+	["spectrealtevent"] = "Reino Æther",
 
 	--HACKER
-	["dash"] = "Dash",
-	["blink"] = "Blink",
-	["swap"] = "Swap",
-	["slide"] = "Escalator",
-	["slideup"] = "Hack In Stairs",
-	["glitch"] = "Glitch Stairs",
+	["dash"] = "Impulso",
+	["blink"] = "Piscar",
+	["swap"] = "Trocar",
+	["slide"] = "Escada Rolante",
+	["slideup"] = "Hackear Escadas",
+	["glitch"] = "Bugar Escadas",
 
-	["hack"] = "Speed Hack",
-	["hackerevent"] = "Escalation",
-	["hackeraltevent"] = "Breach",
+	["hack"] = "Hack de Velocidade",
+	["hackerevent"] = "Escalada",
+	["hackeraltevent"] = "Brecha No Sistema", --"System Breach"
 
 	--THIEF
-	["steal"] = "Steal Stairs",
-	["stealabove"] = "Steal Above Stairs",
-	["place"] = "Place Stairs",
-	["uppass"] = "Spiral Staircase",
-	["sidepass"] = "Create Bypass",
-	["drop"] = "Ditch Stairs",
+	["steal"] = "Roubar Escadas",
+	["stealabove"] = "Roubar Escadas Acima",
+	["place"] = "Colocar Escadas",
+	["uppass"] = "Escada Espiral",
+	["sidepass"] = "Criar Desvio", --"Create Deviation"
+	["drop"] = "Escadas Planas",
 
-	["heist"] = "Heist",
-	["thiefevent"] = "Flat Land",
-	["thiefaltevent"] = "Mega Bypass",
+	["heist"] = "Roubo",
+	["thiefevent"] = "Mundo Plano",
+	["thiefaltevent"] = "Mega Desvio",
 
 	--ARCHON
-	["splitup"] = "Create Up Gate",
-	["splitrotate"] = "Create Rotated Gate",
-	["splitside"] = "Create Straight Gate",
-	["splitrandom"] = "Create Random Gate",
-	["cancelsplit"] = "Destroy Gate",
-	["splitforward"] = "Create Platform Gate",
+	["splitup"] = "Criar Passagem Para cima",
+	["splitrotate"] = "Criar Passagem Girada",
+	["splitside"] = "Criar Passagem Reta",
+	["splitrandom"] = "Criar Passagem Aleatória",
+	["cancelsplit"] = "Destruir Passagem",
+	["splitforward"] = "Criar Passagem de Plataforma",
 
 	["splitter"] = "Portalmania",
-	["archonevent"] = "StairGåte-1",
-	["archonaltevent"] = "Division",
+	["archonevent"] = "Passagens Entrelaçadas", --"Intertwined Gates", just bc it is a visual mess
+	["archonaltevent"] = "Portões Para o Céu", --"Gates to Heaven"
 
 	--DRIFTER
-	["indrift"] = "Surf",
-	["outdrift"] = "Random Drift",
-	["updrift"] = "Elevator",
-	["diagdrift"] = "Diagonal Drift",
-	["spin"] = "Spin Stairs",
-	["driftabove"] = "Lift Above Stairs",
+	["indrift"] = "Surfar",
+	["outdrift"] = "Movimento Aleatório",
+	["updrift"] = "Elevador",
+	["diagdrift"] = "Movimento Diagonal",
+	["spin"] = "Rodar Escadas",
+	["driftabove"] = "Elevar Escadas Acima",
 
-	["riser"] = "Riser",
-	["drifterevent"] = "Driftage",
-	["drifteraltevent"] = "Liftage",
+	["riser"] = "O Ascendente", --"The Ascendant"
+	["drifterevent"] = "À Deriva", --"Adrift"
+	["drifteraltevent"] = "Elevação",
 
 	--HERETIC
-	["createcursed"] = "Create Cursed Stairs",
-	["curse"] = "Curse Stairs",
-	["curseabove"] = "Curse Above Stairs",
+	["createcursed"] = "Criar Escadas Amaldiçoadas",
+	["curse"] = "Amaldiçoar Escadas",
+	["curseabove"] = "Amaldiçoar Escadas Acima",
 	["curseinter"] = "Flicker",
-	["autodown"] = "Raise Schism",
-	["autoup"] = "Schism Opposite Down",
+	["autodown"] = "Levantar Separação",
+	["autoup"] = "Abaixar Separação", --"Schism Down"
 
-	["malediction"] = "Malediction",
-	["hereticevent"] = "Disunion",
-	["hereticaltevent"] = "Vengeance",
+	["malediction"] = "Maldição",
+	["hereticevent"] = "Desunião",
+	["hereticaltevent"] = "Vingança",
 
 	--SPLICER
-	["twistup"] = "Splice Stairs Up",
-	["twistside"] = "Splice Parallel Stairs",
-	["twistrotate"] = "Splice Adjacent Stairs",
-	["canceltwist"] = "Restore Twisted Stairs",
-	["split2"] = "Split Stairs",
-	["splitalt"] = "Split Stairs Forward",
+	["twistup"] = "Emendar Escadas",
+	["twistside"] = "Emendar Escadas Paralelas",
+	["twistrotate"] = "Emendar Escadas Adjacentes",
+	["canceltwist"] = "Restaurar Escadas Torcidas",
+	["split2"] = "Separar Escadas",
+	["splitalt"] = "Separar Escadas Para Frente",
 
-	["twister"] = "Twister",
-	["splicerevent"] = "Interweave",
-	["spliceraltevent"] = "Bisect",
+	["twister"] = "Retorcedor",
+	["splicerevent"] = "Entrelaçar",
+	["spliceraltevent"] = "Bifurcar",
 
 	--NECROMANCER
-	["createdual"] = "Create Dual Stairs",
-	["copyplatform"] = "Copy Ghost's Platform",
-	["soulbridge"] = "Create Soul Bridge",
-	["undeadabove"] = "Remove Soul Above",
-	["revival"] = "Revival Point",
-	["regen"] = "Regenerate Mana",
+	["createdual"] = "Criar Escadas Duplas",
+	["copyplatform"] = "Copiar Plataforma do Fantasma",
+	["soulbridge"] = "Criar Ponte das Almas",
+	["undeadabove"] = "Remover Alma Acima",
+	["revival"] = "Ponto de Renascimento",
+	["regen"] = "Regenerar Mana",
 
-	["duality"] = "Duality",
-	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Soul Harvest",
+	["duality"] = "Dualidade",
+	["necromancerevent"] = "Resurreição",
+	["necromanceraltevent"] = "Colheita das Almas",
 
 	--REAVER
-	["createmirrored"] = "Create Mirrored Stairs",
-	["bigmirror"] = "Giant Mirror",
-	["smallmirror"] = "Small Mirror",
-	["outermirror"] = "Outer Mirror",
+	["createmirrored"] = "Criar Escadas Espelhadas",
+	["bigmirror"] = "Espelho Gigante",
+	["smallmirror"] = "Espelho Pequeno",
+	["outermirror"] = "Espelho Exterior",
 	["merge"] = "Reaver Merge",
-	["oneway"] = "Glass Stairs",
+	["oneway"] = "Escadas de Vidro",
 
-	["reflection"] = "Reflection",
-	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Vitrification",
+	["reflection"] = " Um Tempo Para Refletir", --"A Time To Reflect", yes, a joke, i'm funny, trust me
+	["reaverevent"] = "Não Pode Voltar Atrás", --"No Way Back", i'm sooo funny (Maybe i'm going crazy)
+	["reaveraltevent"] = "Vitrificação",
 
 
 	--GREMLIN
-	["tram"] = "Create Tram Stairs",
-	["screwup"] = "Up Corkscrew",
-	["revolve"] = "Revolve Stairs",
-	["trapstairs"] = "Trapdoor Stairs",
-	["screwdown"] = "Down Corkscrew",
-	["spinplatform"] = "Revolve Platform",
+	["tram"] = "Criar Escadas-Bonde",
+	["screwup"] = "Saca-rolhas Acima", -- listen me, this time I won't screw up the things
+	["revolve"] = "Movimento de Rotação",
+	["trapstairs"] = "Escadas de Alçapão",
+	["screwdown"] = "Saca-rolhas Abaixo",
+	["spinplatform"] = "Roda-Roda Jequiti", --a TV Show meme here
 
-	["tramway"] = "Tram-way",
-	["gremlinevent"] = "Revolvelution",
-	["gremlinaltevent"] = "Gridlock",
+	["tramway"] = "Bonde",
+	["gremlinevent"] = "O Mundo Dá Voltas", --"The World Revolves" smth about Karma
+	["gremlinaltevent"] = "Impasse",
 	
 	--TUTORIAL
-	["tcreate"] = "Create Stairs",
-	["tflip"] = "Flip Stairs",
-	["tdestroy"] = "Destroy Above Stairs",
-	["tmove"] = "Move Stairs",
-	["tdash"] = "Dash",
-	["trestore"] = "Restore Stairs",
+	["tcreate"] = "Criar Escadas",
+	["tflip"] = "Virar Escadas",
+	["tdestroy"] = "Destruir Escadas Acima",
+	["tmove"] = "Mover Escadas",
+	["tdash"] = "Impulso",
+	["trestore"] = "Restaurar Escadas",
 
 	--CHAMELEON
-	["ditch"] = "Cross Stairs",
-	["warp"] = "Warp Stairs",
-	["chamdown"] = "Move Stairs Down",
-	["chamdraw"] = "Below Drawbridge",
+	["ditch"] = "Caminhos Cruzados",
+	["warp"] = "Dobrar Escadas",
+	["chamdown"] = "Descender Escadas",
+	["chamdraw"] = "Ponte Levadiça Abaixo",
 	--["chamswap"] = "Copy Ghost (visual)",
-	["chamdrawabove"] = "Above Drawbridge",
-	["oneways"] = "One-Way Stairs",
+	["chamdrawabove"] = "Ponte Levadiça Acima",
+	["oneways"] = "Escadas de Mão Única", --like a road that you can only drive in one direction
 
 	--NEW
 
-	["mugglereg"] = "Staircase is regenerating",
-	["mugglecd"] = "Events and Rigs Cooldown",
-	["share"] = "Share mana (requires 2 Mana minimum)",
+	["mugglereg"] = "As Escadas Estão Sendo Regeneradas",
+	["mugglecd"] = "Tempo de Espera para Eventos e Rigs",
+	["share"] = "Compartilhar Mana (Precisa de 2 de Mana no Mínimo)",
 
 	--ARCHITECT
-	["archpatron"] = "Create or shrink",
-	["archarchon"] = "Gate stairs or platform",
-	["archthief"] = "Steal or place",
-	["archnecro"] = "Dual or Undead stairs",
-	["archhacker"] = "Escalator or Hack-in",
-	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Split",
-	["archwicked"] = "Wall or Destroy",
-	["archgremlin"] = "Revolve stairs or a platform",
-	["archjoker"] = "Fake or Flip stairs",
-	["archdrifter"] = "Drift or Elevator",
-	["archspectre"] = "Phantom or Ghost stairs",
-	["archreaver"] = "Mirrored or One-way stairs",
-	["archheretic"] = "Curse intersection or stairs",
+	["archpatron"] = "Criar ou Encolher",
+	["archarchon"] = "Passagem Na Plataforma ou Na Escada",
+	["archthief"] = "Roubar ou Colocar",
+	["archnecro"] = "Escadas Duplas ou Sem-Alma",
+	["archhacker"] = "Escada Rolante ou Hackear",
+	["archkeeper"] = "Mover ou Restaurar",
+	["archsplicer"] = "Dividir ou Separar",
+	["archwicked"] = "Parede ou Destruir",
+	["archgremlin"] = "Rotacionar Escadas ou Plataforma",
+	["archjoker"] = "Escadas Falsas  ou Viradas",
+	["archdrifter"] = "Deriva ou Elevador",
+	["archspectre"] = "Escadas Fantasmas ou Espectrais",
+	["archreaver"] = "Escadas de Mão Única ou Espelhadas",
+	["archheretic"] = "Amaldiçoar Intersecções ou Escadas",
 
 	--END NEW
 
 }
 
 -- common description stuff
-local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
+local union = "Esse é um feitiço de União Fantasma cronometado. Uma vez no Modo De União Fantasma, você poderá passar por escadas que bloquearem a passagem e andar em escadas fantasmas, obby, e falsas. Escadas especiais não terão efeito em você, e você não vai ativar rigs. Porém, você não pode usar feitiços neste modo."
 local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
 local timed = "This spell is timed. "  -- do not remove space
 local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
@@ -2260,6 +2260,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
