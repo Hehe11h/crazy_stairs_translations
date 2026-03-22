@@ -11,8 +11,8 @@ module.gui = {}
 
 module.gui.basic = {
 
-	["default"] = "DEFAULT",
-	["validate"] = "VALIDATE",
+	["default"] = "PADRÃO",
+	["validate"] = "VALIDAR",
 
 }
 
@@ -58,17 +58,17 @@ module.gui.serversettings = {
 	["Regeneration"] = "Geração Automática de Escadas após o Purge de um Wicked (não funcionará no modo infinito)",
 	["EvenLevels"] = "Níveis Pares Restringidos",
 	["OrbMoves"] = "O Orbe muda de posição",
-	["InfRegeneration"] = "Geração Automática de , tower levels change and after the infinite race",
+	["InfRegeneration"] = "Geração Automática em um servidor novo, níveis da torre mudam e depois da corrida infinita",
 	--deprecated
 	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
 	["TowerSize"] = "Proporções da Torre (experimental)",
-	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
-	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
+	["RaceDuration"] = "Duração Máxima da Corrida. Não vai afetar a corrida atual. (segundos)",
+	["InfStart"] = "Intervalo inicial da rodada do modo Infinito (2 níveis são criados a cada rodada) (segundos)",
+	["InfReduction"] = "Redução do intervalo no modo Infinito (cada rodada é mais curta por) (segundos)",
+	["InfMin"] = "Duração do intervalo mínimo do modo Infinito (segundos)",
 
 	--NEW KEY
-	["CooldownTime"] = "Event and Rig cool down period (seconds)",
+	["CooldownTime"] = "Tempo de Recarga de Eventos e Rigs (segundos)",
 	--END NEW
 
 }
@@ -77,16 +77,16 @@ module.gui.serversettings = {
 module.gui.shop = {
 
 	--NEW
-	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
+	["architect"] = "O Passe de Jogo Architect te permite se tornar um Architect sem um VR.",
 	--END NEW
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["chameleon"] = "Chameleons podem trocar de alinhamento durante a escalada.",
+	["spectre"] = "Spectre é um alinhamento baseado em teleporte perfeito para jogar sozinho.",
+	["mana"] = "Expanda a sua capacidade de armazenar Mana em 10 pontos.",
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
+	["3tokens"] = "Desbloqueie um feitiço ou use até 3 feitiços ultimates.",
+	["30tokens"] = "Desbloqueie dez feitiços ou use até 30 feitiços ultimates.",
+	["300tokens"] = "O suficiente para liberar todos os feitiços e ainda sobrar 93 Tokens.",
 
 	["3TOKENS"] = "3 Multi Tokens (R$%d)",
 	["30TOKENS"] = "30 Multi Tokens (R$%d)",
@@ -94,7 +94,7 @@ module.gui.shop = {
 
 	--NEW
 	["SPECTRE"] = "Spectre game pass (R$%d)",
-	["MANA"] = "20 Mana Storage game pass (R$%d)",
+	["MANA"] = "20 de Armazenamento de Mana game pass (R$%d)",
 	["CHAMELEON"] = "Chameleon game pass (R$%d)",
 	["ARCHITECT"] = "Architect game pass (R$%d)",
 
@@ -105,11 +105,11 @@ module.gui.shop = {
 
 module.gui.nospellsbar = {
 
-	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
+	["nocasual"] = "APENAS CORREDORES PODEM USAR FEITIÇOS",
+	["possessed"] = "POSSUÍDO! (Encontre Mana para se libertar)",
 	--NEW
-	["permanent"] = "POSSESSED! (permanent mode)",
-	["cancelled"] = "CANCELLED...", --timed spell cancelled
+	["permanent"] = "POSSUÍDO! (modo permanente)",
+	["cancelled"] = "CANCELADO...", --timed spell cancelled
 	--END NEW
 
 }
@@ -117,11 +117,11 @@ module.gui.nospellsbar = {
 --NEW
 module.gui.stats = {
 
-	["badges"] = "YOUR BADGES",
-	["climbs"] = "YOUR CLIMBS",
-	["total"] = "TOTAL CLIMBS/WINS",
-	["best"] = "BEST TIME OVERALL",
-	["norecord"] = "[no record]",
+	["badges"] = "SEUS EMBLEMAS",
+	["climbs"] = "SUAS ESCALADAS",
+	["total"] = "TOTAL DE ESCALADAS/VITÓRIAS",
+	["best"] = "MELHOR TEMPO ENTRE TODOS",
+	["norecord"] = "[nenhum recorde]",
 
 	["2124486274"] = "Prank the Creator",
 	["1803533030753957"] = "Black Hole",
@@ -168,28 +168,28 @@ module.gui.stats = {
 
 
 module.gui.questions = {
-	["cancel"] = "Do you want to cancel this timed spell? Tokens will not be refunded.",
-	["tutorial"]= "Would you like to play the tutorial?",
-	["skip"] = "Would you like to skip the tutorial?",
-	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+	["cancel"] = "Você quer cancelar esse feitiço cronometrado? Os Tokens não serão devolvidos.",
+	["tutorial"]= "Você quer jogar o Tutorial?",
+	["skip"] = "Você quer pular o Tutorial?",
+	["reshuffle"] = "Você quer que as escadas evitem colisões enquanto se movem? Se não, qualquer escada no caminho será destruída.",
 	
 	--new
-	["gift"] = "Do you want to gift %s Game Pass to another player?",
-	["choose"] = "Choose a player to receive %s Game Pass", 
-	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
-	["received"] = "You have received %s Game Pass, courtesy of %s!",
+	["gift"] = "Você quer presenter o Passe de Jogo %s para outro jogador?",
+	["choose"] = "Escolha um jogador para resseber o Passe de Jogo %s", 
+	["confirm"] = "Você quer presentear o Passe de Jogo %s para %s?", --second %s is the chosen player
+	["received"] = "Você recebeu o Passe de Jogo %s, cortesia de %s!",
 	
 	["architect"] = "Architect",
-	["mana"] = "+10 Mana Storage",
+	["mana"] = "+10 de Armazenamento de Mana",
 	["spectre"] = "Spectre",
 	["chameleon"] = "Chameleon",
 
 	--end new
 	--new
-	["race"] = "Join race?",
-	["racein"] = "Race in:",
-	["go"] = "GO!",
-	["raceoff"] = "Race cancelled",
+	["race"] = "Juntar-se a corrida?",
+	["racein"] = "Corrida em:",
+	["go"] = "JÁ!",
+	["raceoff"] = "Corrida cancelada",
  	--end new
 }
 --END NEW
@@ -198,49 +198,49 @@ module.gui.questions = {
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
-	["button"] = "VALIDATE",
+	["title"] = "COLOQUE O CÓDIGO",
+	["body"] = "Coloque Seu código aqui:",
+	["prompt"] = "(código)",
+	["button"] = "VALIDAR",
 
 }
 
 module.gui.jukebox = {
 
-	["title"] = "JUKEBOX",
+	["title"] = "MÚSICA", --same thing with "Jukebox Music" down below, left it only Music, but you can change to "Caixa de Música"
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
-	["failed"] = "[failed to load]",
+	["master"] = "VOLUME GERAL",
+	["default"] = "(usando volume geral)",
+	["climb"] = "MÚSICA DE ESCALADA",
+	["endgame"] = "MÚSICA DE FIM DE JOGO",
+	["failed"] = "[falha ao carregar]",
 	--NEW
-	["off"] = "MUTED",
+	["off"] = "SILENCIADO",
 	--END NEW
 }
 
 module.gui.results = {
 
-	["title"] = "RACE RESULTS",
+	["title"] = "RESULTADOS DA CORRIDA",
 
-	["place"] = "PLACE",
-	["name"] = "NAME",
-	["level"] = "MAX LEVEL",
-	["time"] = "TIME",
-	["rank"] = "RANK",
+	["place"] = "COLOCAÇÃO",
+	["name"] = "NOME",
+	["level"] = "NÍVEL MÁXIMO",
+	["time"] = "TEMPO",
+	["rank"] = "CATEGORIA",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
+	[1] = "VENCEDOR",
+	[2] = "2º",
+	[3] = "3º",
+	[4] = "4º",
+	[5] = "5º",
+	[6] = "6º",
+	[7] = "7º",
+	[8] = "8º",
+	[9] = "9º",
+	[10] = "10º",
+	[11] = "11º",
+	[12] = "12º",
 
 }
 
@@ -249,19 +249,19 @@ module.gui.results = {
 
 module.gui.menu = {
 	
-	["Codes"] = "Code entry",
-	["Feedback"] = "Send game feedback",
-	["Language"] = "Change game language",
-	["Music"] = "Music Jukebox",
-	["RaceResults"] = "Last race results",
-	["ServerSettings"] = "Tower Settings (Custom Tower)",
-	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passes and tokens",
-	["Spectate"] = "Spectate other players",
-	["Stats"] = "Your badges and achievements",
-	["SwitchServer"] = "Switch Tower",
-	["Tokens"] = "Your tokens",
-	["Tutorial"] = "Play the Tutorial",
+	["Codes"] = "Entrada de códigos",
+	["Feedback"] = "Enviar um comentário",
+	["Language"] = "Mudar língua do jogo",
+	["Music"] = "Música", --jukebox doesn't have a full meaning word in my language, so I left it with just Music translation, ok? If it isn't, change it to "Caixa de Música"
+	["RaceResults"] = "Resultados da última corrida",
+	["ServerSettings"] = "Configurações da torre (Torre Customizada)",
+	["Settings"] = "Configurações do jogo",
+	["Shop"] = "Compre passes e tokens",
+	["Spectate"] = "Assistir outros jogadores",
+	["Stats"] = "Seus emblemas e conquistas",
+	["SwitchServer"] = "Trocar Torre",
+	["Tokens"] = "Seus Vales",
+	["Tutorial"] = "Jogue o Tutorial",
 
 }
 
@@ -269,9 +269,9 @@ module.gui.menu = {
 --end screen tutorial
 module.gui.tutorial = {
 	
-	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
-	["difficulty"] = "Difficulty:",
+	["complete"] = "ESCALADA CONCLUÍDA!",
+	["choose"] = "Por favor escolha seu primeiro alinhamento!",
+	["difficulty"] = "Dificuldade:",
 	
 }
 
@@ -339,8 +339,8 @@ module.spells.names = {
 	["keeperaltevent"] = "Restauração",
 
 	--SPECTRE
-	["phantom"] = "Criar Escadas Espectrais", -- I didn't find any that matches with "Ghostify" so I changed to "Spectrify"
-	["ghost"] = "Espectrar Escadas Acima",
+	["phantom"] = "Criar Escadas Fantásmas",
+	["ghost"] = "Espectrar Escadas Acima", -- I didn't find any that matches with "Ghostify" so I changed to "Spectrify"
 	["shadow"] = "Espectrar Escadas",
 	["horizontal"] = "Teleporte Horizontal",
 	["random"] = "Teleporte Aleatório",
@@ -442,7 +442,7 @@ module.spells.names = {
 	["merge"] = "Reaver Merge",
 	["oneway"] = "Escadas de Vidro",
 
-	["reflection"] = " Um Tempo Para Refletir", --"A Time To Reflect", yes, a joke, i'm funny, trust me
+	["reflection"] = "Hora de Refletir", --"(it is) Time To Reflect", yes, a joke, i'm funny, trust me
 	["reaverevent"] = "Não Pode Voltar Atrás", --"No Way Back", i'm sooo funny (Maybe i'm going crazy)
 	["reaveraltevent"] = "Vitrificação",
 
@@ -503,20 +503,20 @@ module.spells.names = {
 }
 
 -- common description stuff
-local union = "Esse é um feitiço de União Fantasma cronometado. Uma vez no Modo De União Fantasma, você poderá passar por escadas que bloquearem a passagem e andar em escadas fantasmas, obby, e falsas. Escadas especiais não terão efeito em você, e você não vai ativar rigs. Porém, você não pode usar feitiços neste modo."
-local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
-local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
-local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
-local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
-local mode = "This is a Drone spell. It will change the drone mode to %s. In this mode drones will cast randomly either %s or %s on normal stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
-local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this spell will also refill Mana for all %s with at least %s Rank." -- do not remove leading space
+local union = "Esse é um feitiço de União Fantasma cronometrado. Uma vez no Modo De União Fantasma, você poderá passar por escadas que bloquearem a passagem e andar em escadas fantasmas, obby, e falsas. Escadas especiais não terão efeito em você, e você não vai ativar rigs. Porém, você não pode usar feitiços neste modo."
+local overload = "Esse é um feitiço de Sobrecarga. Você receberá um de Mana a cada 6 segundos pelo próximo minuto (10 no total). Você só pode ter uma Sobrecarga ativa por vez."
+local timed = "Esse feitiço é cronometrado. "  -- do not remove space
+local rig = "Esse é um feitiço de Rig. Vai transformar em Rig todas as escadas normais, uma por uma, com " -- do not remove space
+local event = "Esse é um feitiço de Evento. Vai afetar todas as escadas normais com " -- do not remove space
+local fill = "Esse é um feitiço de Preencher. Vai criar escadas em toda intersecção vazia não amaldiçoada em uma direção aleatória. " -- do not remove spaces
+local mode = "Esse é um feitiço de Drone. Vai mudar o modo dos drones para %s. Nesse modo drones vão usar aleatóriamente %s ou %s em escadas normais. Se for uma escada especial, ela será restaurada. Fora dos limites, drones vão criar e destruir respectivamente."
+local timedExtra = " Aumente sua Categoria para %s para aumentar o tempo limite para 90s. Usar esse feitiço também irá reabastecer Mana para todos %s com ao menos a Categoria %s." -- do not remove leading space
 
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
+	["summon"] = "Esse feitiço permite você criar uma única escada na direção escolhida. Se tem alguma escada no caminho, ela será destruída.",
+	["restore"] = "Esse feitiço chama o orbe no andar de cima para a plataforma escolhida. Chegue na Categoria do Defender para reduzir o custo para 2 de Mana. Chegue na Categoria Savior para dobrar a velocidade que o orbe vem até você.",
 	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
 	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
